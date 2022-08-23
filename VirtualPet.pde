@@ -2,6 +2,7 @@ void setup(){
   size(400,400);
 }
 void draw(){
+  fill(252,173,13); //orange
   ellipse (200,130,100,85); //head
   triangle (200,10,150,95,250,95); //hat
   ellipse (200,10,20,20); //pompom
