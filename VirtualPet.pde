@@ -1,12 +1,12 @@
-int y = 0;
+//int y = 0;
 void setup(){
   size(400,400);
 }
 void draw(){
   //background(120,120,120);
   //y+=1;
-  System.out.println(mouseX);
-  System.out.println(mouseY);
+  //System.out.println(mouseX);
+  //System.out.println(mouseY);
   
   stroke(0,0,0);
   fill(252,173,13); //orange
