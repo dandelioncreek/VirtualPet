@@ -3,8 +3,8 @@ void setup(){
   size(400,400);
 }
 void draw(){
-  background(120,120,120);
-  y+=1;
+  //background(120,120,120);
+  //y+=1;
   System.out.println(mouseX);
   System.out.println(mouseY);
   
