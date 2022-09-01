@@ -27,9 +27,17 @@ void draw(){
   
   fill(255,255,255); //white
   ellipse (200,10,20,20); //pompom
-  ellipse (200,130,30,30); //eye
+  ellipse (200,130,30,30); //socket
   fill(0,0,0); //black
-  ellipse (205,127,15,15); //eyeball
+  
+  float eyedepth = 100;
+  float pupildistance = 15; //socket radius - eye radius
+  float vectormultconstant = pupildistance/Math.sqrt(mouseX*mouseX + mouseY*mouseY + eyedepth*eyedepth);
+  float pupilcenterx = mouseX*vectormultconstant;
+  float pupilcentery = mouseY*vectormultconstant;
+  
+  ellipse (pupilcenterx,pupilcentery,15,15); //pupil prev center is 205,127
+  
   
   fill(252,173,13); //orange
   ellipse (170,380,60,30); //left foot
