@@ -30,7 +30,7 @@ void draw(){
   ellipse (200,130,30,30); //socket
   fill(0,0,0); //black
   
-  float eyedepth = 100;
+  float eyedepth = 100; //increase to make eye look more center
   float newmouseX = mouseX - 200;
   float newmouseY = mouseY - 130;
   float pupildistance = 10; //socket radius - eye radius
