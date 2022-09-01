@@ -33,7 +33,7 @@ void draw(){
   float eyedepth = 100;
   float newmouseX = mouseX - 200;
   float newmouseY = mouseY - 130;
-  float pupildistance = 15; //socket radius - eye radius
+  float pupildistance = 10; //socket radius - eye radius
   float vectormultconstant = pupildistance/Math.sqrt(newmouseX*newmouseX + newmouseY*newmouseY + eyedepth*eyedepth);
   float pupilcenterx = newmouseX*vectormultconstant + 200;
   float pupilcentery = newmouseY*vectormultconstant + 130;
