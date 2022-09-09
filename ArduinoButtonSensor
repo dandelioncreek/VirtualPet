@@ -1,0 +1,23 @@
+import processing.serial.*;
+import cc.arduino.*;
+Arduino arduino;
+int rButton = 0;
+int lButton = 0;
+public void setup() {
+  size(500, 500);
+  frameRate(30); // slows it down from 60fps
+  arduino = new Arduino(this, Arduino.list()[0], 57600); //change the [0] to a [1] or [2] etc. if your program doesn't work
+}
+
+public void draw() {
+  background(192);
+  lButton = arduino.analogRead(6);
+  if (lButton > 500)
+    fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256)); //change color
+  else
+    fill(0,255,0);
+  
+  rButton = arduino.analogRead(1);
+  if (rButton > 500)
+    ellipse((int)(Math.random()*501), (int)(Math.random()*501), 100 + (int)(Math.random()*51), 100 + (int)(Math.random()*51)); //change position and size
+}
